@@ -21,7 +21,7 @@ try {
             throw new ApiError(401, "Invalid Access Token")
         }
     
-        // add new object into the req we can give any name instead of user
+        // add new object into the req we can give any name instead of user for when we want we can access that 
         req.user = user;
         next()
     
